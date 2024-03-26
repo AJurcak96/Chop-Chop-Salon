@@ -1,0 +1,193 @@
+/* body styling */
+body,
+html,
+.title-container,
+.header-image,
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header container */
+.title-container {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 2em;
+  width: 100%;
+  max-height: 100%;
+}
+
+/* Header image */
+.header-image {
+  display: block;
+  width: 100%;
+  height: 20%;
+  max-height: 70em;
+}
+
+/* Header title */
+.title {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3.5em;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Satisfied customers - header */
+.satisfied-customers {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: bold;
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+
+/* Satisfied customers - feedback */
+.satisfied-customer {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/* Pricing table */
+.pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2em;
+  margin: 0 auto;
+}
+
+/* Pricing table - sections */
+.pricing-plan {
+  width: 100%;
+  background-image: url("image1-grey-area.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Pricing table - header text and price */
+.plan-title,
+.plan-price {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* Pricing table - features text */
+.plan-features {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Container - divs not visible */
+.container {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+/* Container - visible */
+.container.active {
+  opacity: 1;
+}
+
+/* Contact header text */
+.contact {
+  text-align: center;
+  margin-top: 2em;
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: bold;
+  font-size: 4em;
+}
+
+/* Contact info */
+.contact-info {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 600;
+  font-size: 2em;
+}
+
+/* Footer text */
+#footer-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+/* SVG - icons in footer */
+.bi-facebook,
+.bi-instagram {
+  height: 27px;
+  width: 27px;
+  transition: all 0.3s ease;
+}
+
+/* SVG - icons in footer when mouse hover over them */
+.bi-facebook:hover,
+.bi-instagram:hover {
+  height: 30px;
+  width: 30px;
+}
+
+/* For screens 992px width and smaller */
+@media screen and (max-width: 992px) {
+  /* Header title */
+  .title {
+    font-size: 3.5em;
+    width: 40%;
+  }
+  /* Pricing table */
+  .pricing-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  /* Satisfied customers - header */
+  .satisfied-customers {
+    font-size: 3em;
+  }
+
+  /* Satisfied customers - feedback */
+  .satisfied-customer {
+    font-size: 1.5em;
+  }
+}
+
+/* For screens 768px width and smaller */
+@media screen and (max-width: 768px) {
+  /* Header title */
+  .title {
+    font-size: 3em;
+    width: 40%;
+  }
+}
+
+/* For screens 530px width and smaller */
+@media screen and (max-width: 530px) {
+  /* Header title */
+  .title {
+    font-size: 2em;
+    width: 45%;
+  }
+}
+
+/* For screens 400px width and smaller */
+@media screen and (max-width: 400px) {
+  /* Header title */
+  .title {
+    width: 50%;
+  }
+}
